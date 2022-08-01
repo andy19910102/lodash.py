@@ -115,11 +115,12 @@ class Lodash:
 
     ##### LANG METHODS
     @staticmethod
-    def gte(value, other):
-        """
-        Returns true if value is greater than or equal to other, else false.
-        """
-        return value >= other
+    def conforms_to(dict_input: dict, source:dict) -> bool:
+        key = list(source.keys())[0]
+        check_method = source[key]
+        if key in dict_input:
+            return check_method(dict_input[key])
+        return False
 
     @staticmethod
     def gt(value, other):
@@ -127,3 +128,12 @@ class Lodash:
         Returns true if value is greater than other, else false.
         """
         return value > other
+    
+    @staticmethod
+    def gte(value, other):
+        """
+        Returns true if value is greater than or equal to other, else false.
+        """
+        return value >= other
+
+
