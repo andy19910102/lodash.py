@@ -1,7 +1,8 @@
 class Lodash:
     def __init__(self,):
         pass
-
+    
+    ##### LIST METHODS
     @staticmethod
     def compact(x: list) -> list:
         """
@@ -72,11 +73,10 @@ class Lodash:
     @staticmethod
     def head(x: list):
         """
-        Gets the first element of list.
+        Returns the first element of list.
         """
-        if len(x) == 0:
-            return None
-        return x[0]
+        if len(x) > 0:
+            return x[0] 
 
     @staticmethod
     def initial(x: list) -> list:
@@ -104,3 +104,26 @@ class Lodash:
             else:
                 output += f"{obj}"
         return output
+
+    @staticmethod
+    def last(x: list):
+        """
+        Returns the last element of list.
+        """
+        if len(x) > 0:
+            return x[-1] 
+
+    ##### LANG METHODS
+    @staticmethod
+    def gte(value, other):
+        """
+        Returns true if value is greater than or equal to other, else false.
+        """
+        return value >= other
+
+    @staticmethod
+    def gt(value, other):
+        """
+        Returns true if value is greater than other, else false.
+        """
+        return value > other
