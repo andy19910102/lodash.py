@@ -115,6 +115,9 @@ class Lodash:
 
     @staticmethod
     def take(x: list, n=1) -> list:
+        """
+        Creates a slice of list with n elements taken from the beginning.
+        """
         output = []
         i = 0
         for obj in x:
