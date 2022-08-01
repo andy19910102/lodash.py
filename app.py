@@ -62,3 +62,7 @@ class Lodash:
                         return idx
         return -1
 
+    @staticmethod
+    def from_pairs(x: list) -> dict:
+        return dict(x)
+
