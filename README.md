@@ -116,6 +116,24 @@ print(_.join(["a", "b", "c", "d"], "@"))
 # 'a@b@c@d'
 ```
 
+#### _.pull
+
+Removes all given values from list.
+
+```python
+print(_.pull(['a', 'b', 'c', 'a', 'b', 'c'], 'a', 'c'))
+# ['b', 'b']
+```
+
+#### _.pull_all
+
+This method is like _.pull except that it accepts a list of values to remove.
+
+```python
+print(_.pull_all(['a', 'b', 'c', 'a', 'b', 'c'], ['a', 'c']))
+# ['b', 'b']
+```
+
 #### _.last
 
 Returns the last element of list.

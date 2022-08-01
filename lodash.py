@@ -112,6 +112,28 @@ class Lodash:
         """
         if len(x) > 0:
             return x[-1]
+
+    @staticmethod
+    def pull(x: list, *argv):
+        """
+        Removes all given values from list.
+        """
+        output = []
+        for obj in x:
+            if obj not in argv:
+                output.append(obj)
+        return output
+
+    @staticmethod
+    def pull_all(x: list, y: list):
+        """
+        Removes all given values from list.
+        """
+        output = []
+        for obj in x:
+            if obj not in y:
+                output.append(obj)
+        return output
     
     @staticmethod
     def tail(x: list) -> list:
