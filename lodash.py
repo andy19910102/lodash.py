@@ -177,7 +177,19 @@ class Lodash:
 
     ##### LANG METHODS
     @staticmethod
+    def cast_list(x=None) -> list:
+        """
+        Casts value as an list
+        """
+        if x is None:
+            return []
+        return [x]
+
+    @staticmethod
     def conforms_to(dict_input: dict, source:dict) -> bool:
+        """
+        Checks if dict_input conforms to source by invoking the predicate properties of source with the corresponding property values of dict_input.
+        """
         key = list(source.keys())[0]
         check_method = source[key]
         if key in dict_input:
@@ -197,6 +209,13 @@ class Lodash:
         Returns true if value is greater than or equal to other, else false.
         """
         return value >= other
+
+    @staticmethod
+    def is_list(x) -> bool:
+        """
+        Checks if value is classified as a List.
+        """
+        return isinstance(x, list)
 
     ##### MATH METHODS
     @staticmethod

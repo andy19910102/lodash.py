@@ -188,6 +188,79 @@ print(_.xor([2, 1], [2, 3]))
 # [1, 3]
 ```
 
+### Lang Methods
+
+#### _.cast_list
+
+Casts value as an list
+
+```python
+print(_.cast_list(1))
+# [1]
+print(_.cast_list({ 'a': 1 }))
+# [{'a': 1}]
+print(_.cast_list('abc'))
+# ['abc']
+print(_.cast_list())
+# []
+```
+
+#### _.comforms_to
+
+Checks if dict_input conforms to source by invoking the predicate properties of source with the corresponding property values of dict_input.
+
+```python
+dict_example = { 'a': 1, 'b': 2 };
+
+print(_.conforms_to(dict_example, { "b":lambda n : n > 1}))
+# True
+print(_.conforms_to(dict_example, { "b":lambda n : n > 2}))
+# False
+```
+
+#### _.gt
+
+Returns true if value is greater than other, else false.
+
+```python
+print(_.gt(3, 1))
+# True
+print(_.gt(3, 3))
+# False
+print(_.gt(1, 3))
+# False
+```
+
+#### _.gte
+
+Returns true if value is greater than or equal to other, else false.
+
+```python
+print(_.gte(3, 1))
+# True
+print(_.gte(3, 3))
+# True
+print(_.gte(1, 3))
+# False
+```
+
+#### _.is_list
+
+Checks if value is classified as a List.
+
+```python
+print(_.is_list([1, 2, 3]))
+# True
+print(_.is_list("abc"))
+# False
+print(_.is_list(None))
+# False
+print(_.is_list(12))
+# False
+print(_.is_list({"a": 12}))
+# False
+```
+
 ### Math Methods
 
 #### _.add
