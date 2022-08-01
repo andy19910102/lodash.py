@@ -124,3 +124,18 @@ Returns the last element of list.
 print(_.last([1, 2, 3]))
 # 3
 ```
+
+#### _.take
+
+Creates a slice of list with n elements taken from the beginning.
+
+```python=
+print(_.take([1, 2, 3]))
+# [1]
+print(_.take([1, 2, 3], 2))
+# [1, 2]
+print(_.take([1, 2, 3], 5))
+# [1, 2, 3]
+print(_.take([1, 2, 3], 0))
+# [0]
+```

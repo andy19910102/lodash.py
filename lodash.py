@@ -113,6 +113,17 @@ class Lodash:
         if len(x) > 0:
             return x[-1] 
 
+    @staticmethod
+    def take(x: list, n=1) -> list:
+        output = []
+        i = 0
+        for obj in x:
+            i += 1
+            if i > n:
+                break
+            output.append(obj)
+        return output
+
     ##### LANG METHODS
     @staticmethod
     def conforms_to(dict_input: dict, source:dict) -> bool:
