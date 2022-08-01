@@ -6,7 +6,7 @@ Implement Lodash methods with Python.
 
 ## Usage
 
-```python=
+```python
 from lodash import Lodash
 
 # Create instance of Lodash
@@ -22,7 +22,7 @@ print(_.find_index(users, lambda o: o["user"] == "barney"))
 
 Creates an list with all falsey values removed. The values False, None, 0 and "" are falsey.
 
-```python=
+```python
 print(_.compact([0, 1, False, 2, '', 3, None]))
 # [1, 2, 3]
 ```
@@ -31,7 +31,7 @@ print(_.compact([0, 1, False, 2, '', 3, None]))
 
 Creates a slice of list with n elements dropped from the beginning.
 
-```python=
+```python
 print(_.drop([1, 2, 3], 2))
 # [3]
 print(_.drop([1, 2, 3], 5))
@@ -44,7 +44,7 @@ print(_.drop([1, 2, 3], 0))
 
 Creates a slice of list with n elements dropped from the end.
 
-```python=
+```python
 print(_.drop_right([1, 2, 3]))
 # [1, 2]
 print(_.drop_right([1, 2, 3], 2))
@@ -59,7 +59,7 @@ print(_.drop_right([1, 2, 3], 0))
 
 Returns the index of the found element, else -1.
 
-```python=
+```python
 users = [
   { 'user': 'Benson',  'active': False },
   { 'user': 'Frank',    'active': False },
@@ -80,7 +80,7 @@ print(_.find_index(users, 'active'))
 
 This method returns an object composed from key-value pairs.
 
-```python=
+```python
 print(_.from_pairs([['a', 1], ['b', 2]]))
 # {'a': 1, 'b': 2}
 ```
@@ -89,7 +89,7 @@ print(_.from_pairs([['a', 1], ['b', 2]]))
 
 Returns the first element of list.
 
-```python=
+```python
 print(_.head([1, 2, 3]))
 # 1
 print(_.head([])) 
@@ -100,7 +100,7 @@ print(_.head([]))
 
 Gets all but the last element of list.
 
-```python=
+```python
 print(_.initial([1,2,3]))
 # [1, 2]
 ```
@@ -109,7 +109,7 @@ print(_.initial([1,2,3]))
 
 Returns the joined string.
 
-```python=
+```python
 print(_.join(["a", "b", "c"], "~"))
 # 'a~b~c'
 print(_.join(["a", "b", "c", "d"], "@"))
@@ -120,7 +120,7 @@ print(_.join(["a", "b", "c", "d"], "@"))
 
 Returns the last element of list.
 
-```python=
+```python
 print(_.last([1, 2, 3]))
 # 3
 ```
@@ -129,7 +129,7 @@ print(_.last([1, 2, 3]))
 
 Creates a slice of list with n elements taken from the beginning.
 
-```python=
+```python
 print(_.take([1, 2, 3]))
 # [1]
 print(_.take([1, 2, 3], 2))
