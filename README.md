@@ -139,3 +139,33 @@ print(_.take([1, 2, 3], 5))
 print(_.take([1, 2, 3], 0))
 # [0]
 ```
+
+#### _.tail
+
+Gets all but the first element of list.
+
+```python
+print(_.tail([1, 2, 3, 4]))
+# [2, 3, 4]
+```
+
+#### _.uniq
+
+Creates a duplicate-free version of an list.
+
+```python
+print(_.uniq([2, 1, 2]))
+# [1, 2]
+print(_.uniq([3, 3, 4, 4, 5, 6, 6, 7]))
+# [3, 4, 5, 6, 7]
+```
+
+#### _.xor
+
+Creates an list of unique values that is the symmetric difference of the given list. 
+The order of result values is determined by the order they occur in the list.
+
+```python
+print(_.xor([2, 1], [2, 3]))
+# [1, 3]
+```

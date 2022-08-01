@@ -111,7 +111,16 @@ class Lodash:
         Returns the last element of list.
         """
         if len(x) > 0:
-            return x[-1] 
+            return x[-1]
+    
+    @staticmethod
+    def tail(x: list) -> list:
+        """
+        Gets all but the first element of list.
+        """
+        if len(x) <= 1:
+            return []
+        return x[1:]
 
     @staticmethod
     def take(x: list, n=1) -> list:
@@ -126,6 +135,23 @@ class Lodash:
                 break
             output.append(obj)
         return output
+
+    @staticmethod
+    def uniq(x: list) -> list:
+        """
+        Creates a duplicate-free version of an list.
+        """
+        return list(set(x))
+
+    @staticmethod
+    def xor(x: list, y:list) -> list:
+        """
+        Creates an list of unique values that is the symmetric difference of the given list. 
+        The order of result values is determined by the order they occur in the list.
+        """
+        x, y = set(x), set(y)
+        return list(x ^ y) 
+
 
     ##### LANG METHODS
     @staticmethod
