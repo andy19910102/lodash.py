@@ -187,3 +187,41 @@ The order of result values is determined by the order they occur in the list.
 print(_.xor([2, 1], [2, 3]))
 # [1, 3]
 ```
+
+### Math Methods
+
+#### _.add
+
+Adds two numbers.
+
+```python
+print(_.add(6, 4))
+# 10
+```
+
+#### _.divide
+
+Divide two numbers.
+
+```python
+print(_.divide(6, 4))
+# 1.5
+```
+
+#### _.max
+
+Computes the maximum value of list.
+
+```python
+print(_.max([4, 2, 8, 6]))
+# 8
+```
+
+#### _.min
+
+Computes the minimum value of list.
+
+```python
+print(_.min([4, 2, 8, 6]))
+# 2
+```

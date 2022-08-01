@@ -198,4 +198,41 @@ class Lodash:
         """
         return value >= other
 
+    ##### MATH METHODS
+    @staticmethod
+    def add(augend, addend):
+        """
+        Adds two numbers.
+        """
+        return augend + addend
+
+    @staticmethod
+    def divide(dividend, divisor):
+        """
+        Divide two numbers.
+        """
+        return dividend / divisor
+
+    @staticmethod
+    def max(x: list):
+        """
+        Computes the maximum value of list.
+        """
+        output = x[0]
+        for obj in x:
+            if obj > output:
+                output = obj
+        return output
+
+    @staticmethod
+    def min(x: list):
+        """
+        Computes the minimum value of list.
+        """
+        output = x[0]
+        for obj in x:
+            if obj < output:
+                output = obj
+        return output
+
 
