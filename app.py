@@ -5,7 +5,7 @@ class Lodash:
     @staticmethod
     def compact(x: list) -> list:
         """
-        Creates an array with all falsey values removed. The values False, None, 0 and "" are falsey.
+        Creates an list with all falsey values removed. The values False, None, 0 and "" are falsey.
         """
         output = []
         for obj in x:
@@ -17,7 +17,7 @@ class Lodash:
     @staticmethod
     def drop(x: list, n=1) -> list:
         """
-        Creates a slice of array with n elements dropped from the beginning.
+        Creates a slice of list with n elements dropped from the beginning.
         """
         output = []
         for idx, obj in enumerate(x):
@@ -28,7 +28,7 @@ class Lodash:
     @staticmethod
     def drop_right(x: list, n=1) -> list:
         """
-        Creates a slice of array with n elements dropped from the end.
+        Creates a slice of list with n elements dropped from the end.
         """
         output = []
         x_len = len(x)
@@ -64,5 +64,16 @@ class Lodash:
 
     @staticmethod
     def from_pairs(x: list) -> dict:
+        """
+        This method returns an object composed from key-value pairs.
+        """
         return dict(x)
 
+    @staticmethod
+    def head(x: list):
+        """
+        Gets the first element of list.
+        """
+        if len(x) == 0:
+            return None
+        return x[0]
