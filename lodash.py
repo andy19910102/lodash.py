@@ -77,3 +77,16 @@ class Lodash:
         if len(x) == 0:
             return None
         return x[0]
+
+    @staticmethod
+    def initial(x: list) -> list:
+        """
+        Gets all but the last element of list.
+        """
+        output = []
+        x_len = len(x)
+        if x_len == 0:
+            return output
+        for idx in range(0, x_len-1):
+            output.append(x[idx])            
+        return output
