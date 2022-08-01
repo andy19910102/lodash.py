@@ -90,3 +90,17 @@ class Lodash:
         for idx in range(0, x_len-1):
             output.append(x[idx])            
         return output
+
+    @staticmethod
+    def join(x: list, y: str) -> str:
+        """
+        Returns the joined string.
+        """
+        output = ""
+        x_len = len(x)
+        for idx, obj in enumerate(x):
+            if idx < x_len - 1:
+                output += f"{obj}{y}"
+            else:
+                output += f"{obj}"
+        return output
