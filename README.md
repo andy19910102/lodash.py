@@ -134,6 +134,20 @@ print(_.pull_all(['a', 'b', 'c', 'a', 'b', 'c'], ['a', 'c']))
 # ['b', 'b']
 ```
 
+#### _.pull_at
+
+Removes elements from list corresponding to indexes and returns a list of removed elements.
+
+```python
+list_example = ['a', 'b', 'c', 'd']
+pulled = _.pull_at(list_example, [1, 3]);
+
+print(list_example)
+# ['a', 'c']
+print(pulled)
+# ['b', 'd']
+```
+
 #### _.last
 
 Returns the last element of list.

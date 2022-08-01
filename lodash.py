@@ -134,6 +134,21 @@ class Lodash:
             if obj not in y:
                 output.append(obj)
         return output
+
+    @staticmethod
+    def pull_at(x: list, y:list) -> list:
+        """
+        Removes elements from list corresponding to indexes and returns a list of removed elements.
+        """
+        output = []
+        copied_x = x.copy()
+        x.clear()
+        for idx, obj in enumerate(copied_x):
+            if idx in y:
+                output.append(obj)
+            else:
+                x.append(obj)
+        return output
     
     @staticmethod
     def tail(x: list) -> list:
