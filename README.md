@@ -2,12 +2,19 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-Implement Lodash methods with Python.
+Lodash methods in Python.
+
+## Install with pip
+
+```shell
+$ pip install lodash-py
+```
 
 ## Usage
 
 ```python
-from lodash import Lodash
+# From lodash_py modules import Lodash
+from lodash_py import Lodash
 
 # Create instance of Lodash
 _ = Lodash()
